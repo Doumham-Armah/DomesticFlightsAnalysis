@@ -1,13 +1,13 @@
 # DomesticFlightsAnalysis
 
 
-## Introduction:
+### Introduction:
 This is a dataset on Airline On-Time Statistics and Delay Causes.
 The U.S. Department of Transportation's (DOT) Bureau of Transportation Statistics (BTS) tracks the on-time performance of domestic flights operated by large air carriers. Summary information on the number of on-time, delayed, canceled and diverted flights appears in DOT's monthly Air Travel Consumer Report, published about 30 days after the month's end, as well as in summary tables posted on this website. BTS began collecting details on the causes of flight delays in June 2003. Summary statistics and raw data are made available to the public at the time the Air Travel Consumer Report is released.
 
 It includes 1493 entries. 16 domestic carriers. All these entries are in November 2020
 
-Key Insights:
+### Key Insights:
 This dataset is a valuable source of very important data. I wrangled and cleaned it in order to gleam interesting and useful insights. I was interested in seeing how carriers stack against each other. What factors make a carrier good and what make a carrier bad. I also wanted to analyze how different factors affect each other, if at all.
 
 The following are the insights I was able to garner:
@@ -48,11 +48,11 @@ Most efficient carrier (lower is better) :
 - Mesa Airlines Inc.        11.250454
 - Allegiant Air             12.198991
 
-It turns out that American Airlines is the worst domestic carrier in America with the highest mean delay time. 52.4% of its delays are due to carrier itself. This could be due to bad management or other factors like logistics, for example.
+It turns out that **American Airlines** is the worst domestic carrier in America with the highest mean delay time. 52.4% of its delays are due to carrier itself. This could be due to bad management or other factors like logistics, for example.
 Not only is American Airlines highest in mean delay time but the number of times its flights were delayed is mostly also because of them! 
-In contrast, Hawaiian Airlines Inc is the best domestic carrier in America since it has the lowest mean delay time and is the most efficient airline. Its flights are seldom delayed in comparison and even if they are they are only delayed for a relatively shorter time.
+In contrast, **Hawaiian Airlines Inc** is the best domestic carrier in America since it has the lowest mean delay time and is the most efficient airline. Its flights are seldom delayed in comparison and even if they are they are only delayed for a relatively shorter time.
 
 In general, it is pretty clear to me that carrier delay is the main reason carriers arrive late followed by late aircrafts. Security delay barely plays a part in arrival delay. I think this is due to the fact that security incidents happen rarely at airports.
 
-Conclusion:
+### Conclusion:
 In conclusion, I wish I had data for more years and months so I could analyze which airlines improved the most and which did not over a longer period of times. I would like to note that I faced a problem with all the columns ending in 'ct'. They are float but should be integers since they are a count of certain incidents. I tried to type cast them at first into integer but that created inaccuracies since numbers below 0.5 were turned into zeros and that is something I do not want.
